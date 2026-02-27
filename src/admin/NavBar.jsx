@@ -39,17 +39,19 @@ function NavBar() {
         <Link to="/admin/assign-region" onClick={() => setIsOpen(false)}>Assign Region</Link>
         <Link to="/admin/reports" onClick={() => setIsOpen(false)}>View Reports</Link>
       </nav>
-      <div className="profile-control-container">
-        <button
-          className="admin-profile-btn"
-          onClick={() => setShowProfile(!showProfile)}
-          aria-label="Admin Profile"
-        >
-          <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" className="user-avatar-svg">
-            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-          </svg>
-        </button>
-      </div>
+      {!isOpen && (
+        <div className="profile-control-container">
+          <button
+            className="admin-profile-btn"
+            onClick={() => setShowProfile(!showProfile)}
+            aria-label="Admin Profile"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" className="user-avatar-svg">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+            </svg>
+          </button>
+        </div>
+      )}
     </header>
     <div className={`profile-sidebar ${showProfile ? 'open' : ''}`}>
       <button className="close-sidebar" onClick={() => setShowProfile(false)}>×</button>

@@ -231,3 +231,14 @@
     border-bottom: none;
   }
 }
+
+@media (max-width: 320px) {
+  .profile-sidebar {
+    width: 100vw;
+    right: -100vw;
+  }
+
+  .profile-sidebar.open {
+    right: 0;
+  }
+}

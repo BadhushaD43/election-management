@@ -9,6 +9,8 @@ function AssignRegion() {
   const [blo, setBlo] = useState("");
   const [region, setRegion] = useState("");
   const [file, setFile] = useState(null);
+  const [editingBlo, setEditingBlo] = useState(null);
+  const [editForm, setEditForm] = useState({});
 
   const assign = () => {
     if (!blo || !region) {
@@ -61,6 +63,20 @@ function AssignRegion() {
     }
   };
 
+  const handleEdit = (bloItem) => {
+    setEditingBlo(bloItem.name);
+    setEditForm(bloItem);
+  };
+
+  const handleSaveEdit = () => {
+    const updatedList = bloList.map(b => 
+      b.name === editingBlo ? editForm : b
+    );
+    bloList.splice(0, bloList.length, ...updatedList);
+    setEditingBlo(null);
+    alert(`${editForm.name} has been updated`);
+  };
+
   return (
     <div className="assign-region">
       <NavBar />
@@ -83,11 +99,40 @@ function AssignRegion() {
               <tbody>
                 {bloList.map((bloItem, idx) => (
                   <tr key={idx}>
-                    <td>{bloItem.name}</td>
-                    <td>{bloItem.phone}</td>
-                    <td>{bloItem.email}</td>
+                    <td>
+                      {editingBlo === bloItem.name ? (
+                        <input 
+                          value={editForm.name} 
+                          onChange={(e) => setEditForm({...editForm, name: e.target.value})}
+                          className="edit-input"
+                        />
+                      ) : bloItem.name}
+                    </td>
+                    <td>
+                      {editingBlo === bloItem.name ? (
+                        <input 
+                          value={editForm.phone} 
+                          onChange={(e) => setEditForm({...editForm, phone: e.target.value})}
+                          className="edit-input"
+                        />
+                      ) : bloItem.phone}
+                    </td>
+                    <td>
+                      {editingBlo === bloItem.name ? (
+                        <input 
+                          value={editForm.email} 
+                          onChange={(e) => setEditForm({...editForm, email: e.target.value})}
+                          className="edit-input"
+                        />
+                      ) : bloItem.email}
+                    </td>
                     <td>{bloItem.region || "Not Assigned"}</td>
                     <td>
+                      {editingBlo === bloItem.name ? (
+                        <button className="save-button" onClick={handleSaveEdit}>Save</button>
+                      ) : (
+                        <button className="edit-button" onClick={() => handleEdit(bloItem)}>Edit</button>
+                      )}
                       <button 
                         className="delete-button" 
                         onClick={() => handleDelete(bloItem.name)}
