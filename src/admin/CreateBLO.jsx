@@ -12,7 +12,7 @@ function CreateBLO() {
     name: "",
     phone: "",
     email: "",
-    address: "",
+    password: "",
     gender: "",
     age: "",
   });
@@ -40,7 +40,7 @@ function CreateBLO() {
       name: "",
       phone: "",
       email: "",
-      address: "",
+      password: "",
       gender: "",
       age: "",
     });
@@ -76,9 +76,10 @@ function CreateBLO() {
         />
         <input
           className="input-field"
-          name="address"
-          placeholder="Address"
-          value={blo.address}
+          name="password"
+          type="password"
+          placeholder="Password"
+          value={blo.password}
           onChange={handleChange}
         />
         <select

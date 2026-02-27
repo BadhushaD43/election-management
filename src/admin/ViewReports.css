@@ -6,7 +6,7 @@
 .view-reports-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #f5f5f5;
 }
 
 .view-reports {
@@ -17,12 +17,11 @@
 }
 
 .view-reports h3 {
-  color: white;
+  color: #2c3e50;
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .overall-leading {
@@ -35,14 +34,14 @@
 }
 
 .overall-leading h2 {
-  color: #667eea;
+  color: #007bff;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
 .overall-winner {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #007bff;
   padding: 1.5rem;
   border-radius: 16px;
   margin-bottom: 1.5rem;
@@ -82,7 +81,7 @@
 }
 
 .party-name {
-  color: #667eea;
+  color: #007bff;
   font-weight: 700;
   font-size: 1.1rem;
 }
@@ -102,12 +101,11 @@
 
 .filter-select {
   padding: 0.875rem 1.5rem;
-  border: 2px solid white;
+  border: 2px solid #007bff;
   border-radius: 12px;
   font-size: 1rem;
-  color: white;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  color: #2c3e50;
+  background: white;
   cursor: pointer;
   transition: all 0.3s ease;
   min-width: 200px;
@@ -116,7 +114,7 @@
 
 .filter-select:focus {
   outline: none;
-  background: rgba(255, 255, 255, 0.3);
+  background: #e7f1ff;
 }
 
 .filter-select option {
@@ -133,24 +131,24 @@
 }
 
 .region-title {
-  color: #667eea;
+  color: #007bff;
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
-  border-bottom: 3px solid #667eea;
+  border-bottom: 3px solid #007bff;
   padding-bottom: 1rem;
 }
 
 .leading-party {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #007bff;
   color: white;
   padding: 1rem 2rem;
   border-radius: 12px;
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 }
 
 .leading-party strong {
@@ -185,14 +183,14 @@
 }
 
 .party-support-card .party-header h3 {
-  color: #667eea;
+  color: #007bff;
   font-size: 1.8rem;
   margin: 0;
   text-shadow: none;
 }
 
 .supporters-count {
-  background: #667eea;
+  background: #007bff;
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 25px;
@@ -208,7 +206,7 @@
 }
 
 .blo-attendance strong {
-  color: #667eea;
+  color: #007bff;
   display: block;
   margin-bottom: 0.75rem;
   font-size: 1.1rem;
@@ -221,7 +219,7 @@
 }
 
 .blo-tag {
-  background: #667eea;
+  background: #007bff;
   color: white;
   padding: 0.4rem 1rem;
   border-radius: 20px;
@@ -236,7 +234,7 @@
 }
 
 .voter-feedbacks strong {
-  color: #667eea;
+  color: #007bff;
   display: block;
   margin-bottom: 1rem;
   font-size: 1.1rem;
@@ -247,7 +245,7 @@
   padding: 1rem;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   border-radius: 8px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #007bff;
 }
 
 .feedback-item:last-child {
@@ -298,13 +296,12 @@
 
 .no-data {
   text-align: center;
-  color: white;
+  color: #2c3e50;
   padding: 3rem;
   font-size: 1.3rem;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.1);
+  background: white;
   border-radius: 16px;
-  backdrop-filter: blur(10px);
 }
 
 @media (max-width: 768px) {

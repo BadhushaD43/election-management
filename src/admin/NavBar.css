@@ -73,7 +73,7 @@
   background: transparent;
   border: none;
   font-size: 2rem;
-  color: #315caa;
+  color: #007bff;
   cursor: pointer;
   line-height: 1;
 }
@@ -86,7 +86,7 @@
 }
 
 .profile-info h3 {
-  color: #315caa;
+  color: #007bff;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
   font-weight: 700;
@@ -99,7 +99,7 @@
 }
 
 .password-change h4 {
-  color: #315caa;
+  color: #007bff;
   margin-bottom: 1rem;
   font-size: 1.05rem;
   font-weight: 700;
@@ -119,14 +119,13 @@
 
 .profile-input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #007bff;
 }
 
 .profile-submit {
   width: 100%;
   padding: 0.75rem;
-  background: #315caa;
-  /* Solid Blue Button */
+  background: #007bff;
   color: white;
   border: none;
   border-radius: 6px;
@@ -137,7 +136,7 @@
 }
 
 .profile-submit:hover {
-  background: #254a8b;
+  background: #0056b3;
   transform: translateY(-2px);
 }
 
@@ -174,7 +173,7 @@
 .menu-icon span {
   width: 25px;
   height: 3px;
-  background: #667eea;
+  background: #007bff;
   border-radius: 3px;
   transition: all 0.3s ease;
 }
@@ -187,8 +186,7 @@
 }
 
 .nav-links a {
-  color: #315caa;
-  /* Royal blue for links */
+  color: #007bff;
   text-decoration: none;
   font-weight: 700;
   padding: 0.5rem 1rem;
@@ -197,7 +195,7 @@
 }
 
 .nav-links a:hover {
-  background: #315caa;
+  background: #007bff;
   color: white;
   transform: translateY(-2px);
 }

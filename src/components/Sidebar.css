@@ -29,7 +29,7 @@
 .sidebar-logo-icon {
     width: 2.5rem;
     height: 2.5rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #007bff;
     border-radius: 0.75rem;
     display: flex;
     align-items: center;
@@ -132,7 +132,7 @@
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 9999px;
-    background-color: #764ba2;
+    background-color: #007bff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,7 +260,7 @@
 }
 
 .profile-data-value.accent {
-    color: #667eea;
+    color: #007bff;
 }
 
 .profile-data-split {
@@ -290,12 +290,12 @@
 
 .action-btn-password {
     background-color: #262846;
-    color: #667eea;
-    border: 1px solid rgba(102, 126, 234, 0.1);
+    color: #007bff;
+    border: 1px solid rgba(0, 123, 255, 0.1);
 }
 
 .action-btn-password:hover {
-    background-color: #667eea;
+    background-color: #007bff;
     color: #ffffff;
 }
 
@@ -356,8 +356,8 @@
 
 .region-btn.active {
     background-color: #24263c;
-    border-color: rgba(102, 126, 234, 0.3);
-    color: #667eea;
+    border-color: rgba(0, 123, 255, 0.3);
+    color: #007bff;
 }
 
 .region-btn span {
@@ -401,7 +401,7 @@
 }
 
 .agent-item:hover {
-    color: #667eea;
+    color: #007bff;
 }
 
 .agent-item-dot {
@@ -414,7 +414,7 @@
 }
 
 .agent-item:hover .agent-item-dot {
-    background-color: #667eea;
+    background-color: #007bff;
 }
 
 /* Footer */

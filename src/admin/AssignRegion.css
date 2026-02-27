@@ -6,7 +6,7 @@
 .assign-region {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #f5f5f5;
 }
 
 .assign-content {
@@ -20,14 +20,14 @@
 }
 
 .assign-content h3 {
-  color: #667eea;
+  color: #007bff;
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 .assign-content h4 {
-  color: #667eea;
+  color: #007bff;
   font-size: 1.3rem;
   margin: 2rem 0 1rem 0;
 }
@@ -71,7 +71,7 @@
 }
 
 .blo-table th {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #007bff;
   color: white;
   padding: 1rem;
   text-align: left;
@@ -129,14 +129,14 @@
   width: 100%;
   padding: 0.875rem;
   margin: 0.75rem 0;
-  border: 2px dashed #667eea;
+  border: 2px dashed #007bff;
   border-radius: 10px;
   background: white;
   cursor: pointer;
 }
 
 .file-name {
-  color: #667eea;
+  color: #007bff;
   font-weight: 600;
   margin: 0.5rem 0;
 }
@@ -172,12 +172,12 @@
 }
 
 .blo-select-card.selected {
-  border-color: #667eea;
-  background: #f0f4ff;
+  border-color: #007bff;
+  background: #e7f1ff;
 }
 
 .blo-select-card:hover {
-  border-color: #667eea;
+  border-color: #007bff;
 }
 
 .current-region {
@@ -197,14 +197,14 @@
 }
 
 .input-field:focus {
-  border-color: #667eea;
+  border-color: #007bff;
   outline: none;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
   transform: translateY(-2px);
 }
 
 .primary-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #007bff;
   color: white;
   border: none;
   padding: 0.875rem 2rem;
@@ -213,14 +213,15 @@
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
   margin-top: 1rem;
   width: 100%;
 }
 
 .primary-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+  background: #0056b3;
 }
 
 .primary-button:active {
