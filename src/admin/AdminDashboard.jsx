@@ -18,8 +18,9 @@ const drawBarChart = (canvas, data) => {
   const padding = 40;
   const chartWidth = canvas.width - padding * 2;
   const chartHeight = canvas.height - padding * 2;
-  const barWidth = 40;
-  const totalBarsWidth = entries.length * barWidth + (entries.length - 1) * 10;
+  const barWidth = 50;
+  const barSpacing = 40;
+  const totalBarsWidth = entries.length * barWidth + (entries.length - 1) * barSpacing;
   const startX = (canvas.width - totalBarsWidth) / 2;
   
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -36,7 +37,7 @@ const drawBarChart = (canvas, data) => {
   // Draw bars
   entries.forEach((blo, idx) => {
     const barHeight = (blo.reports / maxValue) * chartHeight;
-    const x = startX + idx * (barWidth + 10);
+    const x = startX + idx * (barWidth + barSpacing);
     const y = canvas.height - padding - barHeight;
     
     ctx.fillStyle = '#007bff';
